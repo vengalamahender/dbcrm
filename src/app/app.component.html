@@ -1,20 +1,380 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+<div class="">
+    <img src="../assets/iVIS.jpg"><b style="font-size: 25px;color: rgb(74, 142, 202);margin-top: 12px;"><sub>SiteManager</sub></b>
 </div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<mat-toolbar>
+  <mat-toolbar-row>
+    <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
+      <mat-button-toggle value="regular" ><mat-icon class="home-icon">home</mat-icon></mat-button-toggle>
+      <mat-button-toggle value="regular">Reports</mat-button-toggle>
+    </mat-button-toggle-group>
+    <span class="example-spacer"></span>
+    <span>Murali Rachapudi</span>
+    <mat-button-toggle value="regular" matTooltip="SignOut" ><mat-icon class="home-icon" >power_settings_new</mat-icon></mat-button-toggle>
+    <mat-button-toggle value="regular" matTooltip="Change Password"><mat-icon class="home-icon">lock</mat-icon></mat-button-toggle>
+  </mat-toolbar-row>
+</mat-toolbar>
+<div class="row">
+  
+    <div class="col-xl-3 rw">
+      <span style="margin-right: 5px;"><b>Site Type:</b></span>
+      <select >
+        <option>ATM</option>
+        <option>PROJECT</option>
+        <option>BRANCH</option>
+      </select>
+      <span style="padding-left: 7px;">
+        <mat-icon class="example-icon">search</mat-icon>
+      </span>
 
+    </div>
+    <div class="col-xl-9 rw" style="text-align: left;">
+      <b (click)="mapView()" style="cursor: pointer;">MapView</b>/<b (click)="listView()" style="cursor: pointer;">ListView</b>
+    </div>
+</div>
+<div style="width: 100%; height: 845px; background: white;" >
+  <as-split direction="horizontal">
+                    <as-split-area size="25">
+                        <as-split direction="vertical">
+                            <as-split-area size="50" style="border: 2px solid #F6992F;border-radius: 5px;">
+                                <mat-tab-group>
+                                  <div style="">
+                                      <mat-tab label="Field" active>
+                                        <input id="pac-input" class="controls" type="text" placeholder="Search Box">
+                                                    <mat-accordion class="mat-acc">
+                                                  <mat-expansion-panel>
+                                                    <mat-expansion-panel-header>
+                                                      <mat-panel-title>
+                                                        TeamLead1
+                                                      </mat-panel-title>
+                                                    </mat-expansion-panel-header>
+                                                  </mat-expansion-panel>
+                                                  <mat-expansion-panel>
+                                                    <mat-expansion-panel-header>
+                                                      <mat-panel-title>
+                                                       TeamLead2
+                                                      </mat-panel-title>
+                                                    </mat-expansion-panel-header>
+                                                  <ul>
+                                                    <li>1</li>
+                                                    <li>2</li>
+                                                    <li>3</li>
+                                                  </ul>
+                                                  </mat-expansion-panel>
+                                                  <mat-expansion-panel>
+                                                    <mat-expansion-panel-header>
+                                                      <mat-panel-title>
+                                                        TeamLead3
+                                                      </mat-panel-title>
+                                                    </mat-expansion-panel-header>
+                                                    <mat-form-field>
+                                                      <input matInput placeholder="First name">
+                                                    </mat-form-field>
+                                                  </mat-expansion-panel>
+                                                  <mat-expansion-panel>
+                                                    <mat-expansion-panel-header>
+                                                      <mat-panel-title>
+                                                       TeamLead14
+                                                      </mat-panel-title>
+                                                    </mat-expansion-panel-header>
+                                                    <mat-form-field>
+                                                      <input matInput placeholder="First name">
+                                                    </mat-form-field>
+                                                  </mat-expansion-panel>
+                                                  <mat-expansion-panel>
+                                                    <mat-expansion-panel-header>
+                                                      <mat-panel-title>
+                                                        TeamLead15
+                                                      </mat-panel-title>
+                                                    </mat-expansion-panel-header>
+                                                    <mat-form-field>
+                                                      <input matInput placeholder="First name">
+                                                    </mat-form-field>
+                                                  </mat-expansion-panel>
+                                                  <mat-expansion-panel>
+                                                    <mat-expansion-panel-header>
+                                                      <mat-panel-title>
+                                                        TeamLead16
+                                                      </mat-panel-title>
+                                                    </mat-expansion-panel-header>
+                                                    <mat-form-field>
+                                                      <input matInput placeholder="First name">
+                                                    </mat-form-field>
+                                                  </mat-expansion-panel>
+                                                  <mat-expansion-panel>
+                                                    <mat-expansion-panel-header>
+                                                      <mat-panel-title>
+                                                        TeamLead17
+                                                      </mat-panel-title>
+                                                    </mat-expansion-panel-header>
+                                                    <mat-form-field>
+                                                      <input matInput placeholder="First name">
+                                                    </mat-form-field>
+                                                  </mat-expansion-panel>
+                                                  <mat-expansion-panel>
+                                                    <mat-expansion-panel-header>
+                                                      <mat-panel-title>
+                                                        TeamLead18
+                                                      </mat-panel-title>
+                                                    </mat-expansion-panel-header>
+                                                    <mat-form-field>
+                                                      <input matInput placeholder="First name">
+                                                    </mat-form-field>
+                                                  </mat-expansion-panel>
+                                                <mat-expansion-panel>
+                                                    <mat-expansion-panel-header>
+                                                      <mat-panel-title>
+                                                        TeamLead19
+                                                      </mat-panel-title>
+                                                    </mat-expansion-panel-header>
+                                                    <mat-form-field>
+                                                      <input matInput placeholder="First name">
+                                                    </mat-form-field>
+                                                  </mat-expansion-panel>
+                                                </mat-accordion>
+                                            </mat-tab>
+                                            </div>
+                                            <mat-tab label="Site"> Content 2
+                                             </mat-tab>
+                                          </mat-tab-group>
+                            </as-split-area>
+                            <as-split-area size="50" style="border: 2px solid #F6992F;border-radius: 5px;">
+                                <div *ngIf="calendarOptions" class="my-ng-fullcalendar">
+                                    <ng-fullcalendar #ucCalendar [options]="calendarOptions" (eventClick)="eventClick($event.detail)" (eventDrop)="updateEvent($event.detail)"
+                                        (eventResize)="updateEvent($event.detail)" (clickButton)="clickButton($event.detail)" >
+                                    </ng-fullcalendar>
+                                </div>
+                            </as-split-area>
+<!--                             <as-split-area>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tiam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                            </as-split-area> -->
+                        </as-split>
+                    </as-split-area>
+                    <as-split-area size="75">
+                        <as-split direction="vertical">
+                            <as-split-area size="50" style="border: 2px solid #F6992F;border-radius: 5px;">
+                                <div *ngIf="show2">
+                                  <table>
+                                    <thead>
+                                      <tr>
+                                        <th>Site No.</th>
+                                        <th>Units</th>
+                                        <th>ATM IDs</th>
+                                        <th>Site Name</th>
+                                        <th>Project</th>
+                                        <th>Team Lead</th>
+                                        <th>Field Rep</th>
+                                        <th>Travel Distance</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td>3194</td>
+                                        <td>IVIS3051</td>
+                                        <td>S10G014132003</td>
+                                        <td>SBI-Bhopal Bank Street MP nagar</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </div>
+                                 <agm-map 
+                                        [latitude]="lat"
+                                        [longitude]="lng"
+                                        [zoom]="zoom"
+                                        [scaleControl]="true"
+                                        [streetViewControl]="true"
+                                        [mapTypeControl]="true"
+                                        [fullscreenControl]="true"
+                                        [disableDefaultUI]="false"
+                                        [zoomControl]="true"
+                                        (mapClick)="mapClicked($event)" *ngIf="show1">
+                                        <div class="input-container" >
+                                              <input 
+                                                type="text"
+                                                class="google-place-input"
+                                                placeholder="Type to search..">
+                                        </div>
+                                        <agm-marker 
+                                            *ngFor="let m of markers; let i = index"
+                                            (markerClick)="clickedMarker(m.label, i)"
+                                            [latitude]="m.lat"
+                                            [longitude]="m.lng"
+                                            [label]="m.label"
+                                            [markerDraggable]="m.draggable"
+                                            (dragEnd)="markerDragEnd(m, $event)">              
+                                          <agm-info-window>
+                                            <strong>InfoWindow content</strong>
+                                          </agm-info-window>           
+                                        </agm-marker>          
+                                        <agm-circle [latitude]="lat + 0.3" [longitude]="lng" 
+                                            [radius]="5000"
+                                            [fillColor]="'red'"
+                                            [circleDraggable]="true"
+                                            [editable]="true">
+                                        </agm-circle>
+                                  </agm-map>
+                            </as-split-area>
+                            <as-split-area size="50" style="border: 2px solid #F6992F;border-radius: 5px;">
+                              <mat-tab-group>
+                                <mat-tab label="Filed Visit Performance" > 
+                                    <table>
+                                      <thead>
+                                        <tr>          
+                                          <th>No</th>
+                                          <th>Team Lead Name</th>
+                                          <th>Visited Yesterday</th>
+                                          <th>Visited So Far</th>
+                                          <th>Online Percent</th>
+                                          <th>Hdd Recording Percent</th>
+                                          <th>Streaming Percent</th>
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                        <tr>
+                                          <td>1</td>
+                                          <td>1</td>
+                                          <td>1</td>
+                                          <td>1</td>
+                                          <td>1</td>
+                                          <td>1</td>
+                                          <td>1</td>
+                                        </tr>
+                                        <tr>
+                                          <td>2</td>
+                                          <td>2</td>
+                                          <td>2</td>
+                                          <td>2</td>
+                                          <td>2</td>
+                                          <td>2</td>
+                                          <td>2</td>
+                                        </tr>
+                                        <tr>
+                                          <td>3</td>
+                                          <td>3</td>
+                                          <td>3</td>
+                                          <td>3</td>
+                                          <td>3</td>
+                                          <td>3</td>
+                                          <td>3</td>
+                                        </tr>
+                                        <tr>
+                                          <td>4</td>
+                                          <td>4</td>
+                                          <td>4</td>
+                                          <td>4</td>
+                                          <td>4</td>
+                                          <td>4</td>
+                                          <td>4</td>
+                                        </tr>
+                                        <tr>
+                                          <td>1</td>
+                                          <td>1</td>
+                                          <td>1</td>
+                                          <td>1</td>
+                                          <td>1</td>
+                                          <td>1</td>
+                                          <td>1</td>
+                                        </tr>
+                                        <tr>
+                                          <td>2</td>
+                                          <td>2</td>
+                                          <td>2</td>
+                                          <td>2</td>
+                                          <td>2</td>
+                                          <td>2</td>
+                                          <td>2</td>
+                                        </tr>
+                                        <tr>
+                                          <td>3</td>
+                                          <td>3</td>
+                                          <td>3</td>
+                                          <td>3</td>
+                                          <td>3</td>
+                                          <td>3</td>
+                                          <td>3</td>
+                                        </tr>
+                                        <tr>
+                                          <td>4</td>
+                                          <td>4</td>
+                                          <td>4</td>
+                                          <td>4</td>
+                                          <td>4</td>
+                                          <td>4</td>
+                                          <td>4</td>
+                                        </tr>
+                                        <tr>
+                                          <td>1</td>
+                                          <td>1</td>
+                                          <td>1</td>
+                                          <td>1</td>
+                                          <td>1</td>
+                                          <td>1</td>
+                                          <td>1</td>
+                                        </tr>
+                                        <tr>
+                                          <td>2</td>
+                                          <td>2</td>
+                                          <td>2</td>
+                                          <td>2</td>
+                                          <td>2</td>
+                                          <td>2</td>
+                                          <td>2</td>
+                                        </tr>
+                                        <tr>
+                                          <td>3</td>
+                                          <td>3</td>
+                                          <td>3</td>
+                                          <td>3</td>
+                                          <td>3</td>
+                                          <td>3</td>
+                                          <td>3</td>
+                                        </tr>
+                                        <tr>
+                                          <td>4</td>
+                                          <td>4</td>
+                                          <td>4</td>
+                                          <td>4</td>
+                                          <td>4</td>
+                                          <td>4</td>
+                                          <td>4</td>
+                                        </tr>
+                                        <tr>
+                                          <td>1</td>
+                                          <td>1</td>
+                                          <td>1</td>
+                                          <td>1</td>
+                                          <td>1</td>
+                                          <td>1</td>
+                                          <td>1</td>
+                                        </tr>
+                                        <tr>
+                                          <td>2</td>
+                                          <td>2</td>
+                                          <td>2</td>
+                                          <td>2</td>
+                                          <td>2</td>
+                                          <td>2</td>
+                                          <td>2</td>
+                                        </tr>
+                                        <tr>
+                                          <td>3</td>
+                                          <td>3</td>
+                                          <td>3</td>
+                                          <td>3</td>
+                                          <td>3</td>
+                                          <td>3</td>
+                                          <td>3</td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </mat-tab>
+                                  <mat-tab label="Site Info">Site Table </mat-tab>
+                                </mat-tab-group>
+                            </as-split-area>
+                        </as-split>
+                    </as-split-area>
+                </as-split>
+</div>

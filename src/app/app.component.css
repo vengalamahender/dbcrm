@@ -1,0 +1,152 @@
+table {
+font-family: verdana, helvetica;
+    border-collapse: collapse;
+    width: 100%;
+    
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 2px;
+    font-size: 12px;
+    font-family: Lato;
+}
+th{
+    background-color: #F6992F;
+    font-family: verdana, helvetica;
+    color: #333;
+}
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: transparent;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.nav{
+    background-color: #333;
+}
+.example-icon {
+  padding: 0 14px;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.mat-toolbar-row, .mat-toolbar-single-row {
+    height: 34px;
+    background: #333;
+    color: white;
+}
+sub {
+    bottom: -0.85em;
+}
+mat-grid-tile {
+  background: #ffffff;
+  border: 2px solid #F6992F;
+  border-radius: 5px;
+
+}
+.mat-toolbar-multiple-rows {
+    min-height: 34px;
+}
+/*.home-icon{
+    margin-right: 24px;font-size: 32px;margin-bottom: 7px;
+}*/
+.mat-acc{
+    width: 98%;
+}
+.mat-grid-tile .mat-figure {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    display: initial !important;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+.docs-example-viewer-title {
+    align-content: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 8px 20px;
+}
+example-viewer .docs-example-viewer-title {
+    color: rgba(0,0,0,.54);
+    background: rgba(0,0,0,.03);
+}
+select{
+        width:  40%;
+    border-radius: 5px;
+}
+.mat-expansion-panel-spacing {
+    margin:0px;
+}
+
+.rw{
+    border: 2px solid #F6992F;
+    border-radius: 5px;
+        padding: 5px;
+        text-align: center;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+ 
+     margin-right: 0px; 
+     margin-left: 0px; 
+}
+agm-map {
+    height: 100%;
+    width: 100%;
+}
+@media only screen and (max-height:  800px) {
+    agm-map {
+        height: 334px;
+        width: 100%;
+    }
+}
+/** {
+  font-family: Lato;
+}*/
+
+a {
+  color: darkblue;
+}
+.my-ng-fullcalendar{
+   width:100%;
+   height:  auto;
+ }
+.input-container {
+    text-align: center; 
+    width: 100%;
+}
+
+.google-place-input {
+    width: 20%;
+    min-width: 280px;
+    height: 2rem; 
+    font-size: 1.5rem; 
+    padding: 0.5rem;
+}
